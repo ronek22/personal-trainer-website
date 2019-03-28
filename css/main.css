@@ -18,18 +18,24 @@ strong {
     margin-left: 40px; 
 }
 
-.bg-white {
-    height: 180px;
+.navbar {
+    height: 220px;
     background-color: white !important;
+    -webkit-transition:height 0.2s ease;
+    -moz-transition:height 0.2s ease; 
+    -o-transition:height 0.2s ease;        
+    transition:height 0.2s ease; 
 }
+
 
 #my-nav {
     font-family: 'K2D', sans-serif;
     font-size: 20px;
     font-weight: 500;
     color: #707070;
-    padding-top: 50px;
+    padding-top:50px;
 }
+
 
 
 .row.row-grid [class*="col-"]+[class*="col-"] {
@@ -54,9 +60,6 @@ strong {
     }
 }
 
-#carouselSlider {
-    margin-top: 180px;
-}
 
 .carousel-item {
     min-height: 500px;

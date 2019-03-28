@@ -5,6 +5,7 @@ body {
     font-family: "Open Sans";
     font-size: 18px;
     font-weight: 400;
+    padding-top: 200px;;
 }
 
 strong {
@@ -18,13 +19,15 @@ strong {
     margin-left: 40px; 
 }
 
-.navbar {
-    height: 220px;
+nav {
+    height: 200px;
     background-color: white !important;
-    -webkit-transition:height 0.2s ease;
-    -moz-transition:height 0.2s ease; 
-    -o-transition:height 0.2s ease;        
-    transition:height 0.2s ease; 
+    top: 0;
+    transition: top 0.2s ease-in-out;
+}
+
+.nav-up {
+    top: -200px;
 }
 
 

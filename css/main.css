@@ -36,7 +36,7 @@ strong {
     margin-top: 30px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
     .row.row-grid [class*="col-lg-"]+[class*="col-lg-"] {
         margin-top: 0;
     }
@@ -123,6 +123,11 @@ strong {
     min-height: 710px;
     background-color: #276c50;
     color: #eeeeee;
+}
+
+#about-me img {
+    width: 100%;
+    height: auto;
 }
 
 #about-me h1 {

@@ -133,7 +133,7 @@ nav {
 }
 
 .offer-inside {
-    min-height: 330px;
+    min-height: 340px;
     padding-left: 40px;
     padding-top: 50px;
 }
@@ -374,6 +374,20 @@ nav {
     height: 49px;
     border: 1px solid #c7c7c7;
     background-color: #ffffff;
+}
+
+#contact-form textarea {
+    font-size: 16px;
+    border-radius: 0;
+    border: 1px solid #c7c7c7;
+    background-color: #ffffff;
+}
+
+#contact-form sup {
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 500;
+    color: red;
 }
 
 .contact {

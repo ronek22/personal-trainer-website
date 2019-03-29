@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=K2D:500,700');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,500,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 .desc {
     display: none;
 }
 
 body {
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     font-size: 18px;
     font-weight: 400;
     padding-top: 200px;
-    ;
 }
+
 
 strong {
     font-family: Montserrat;
@@ -25,14 +26,40 @@ strong {
 }
 
 nav {
-    height: 200px;
+    min-height: 200px;
     background-color: white !important;
     top: 0;
     transition: top 0.2s ease-in-out;
 }
 
+
 .nav-up {
     top: -200px;
+}
+
+
+
+.navbar-brand img {
+    max-width: 270px;
+}
+
+@media(max-width:991px) {
+    body {
+        padding-top: 100px !important;
+    }
+
+    nav {
+        min-height: 100px !important;
+    }
+
+    .nav-up {
+        top: -100px !important;
+    }
+
+    .navbar-brand img {
+        display: block;
+        max-width: 180px;
+    }
 }
 
 
@@ -92,7 +119,7 @@ nav {
 
 #offer h3 {
     margin-top: 130px;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     font-size: 25px;
     font-weight: 400;
     text-transform: uppercase;
@@ -199,7 +226,7 @@ nav {
 }
 
 #about-me p {
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
@@ -302,6 +329,70 @@ nav {
     font-weight: 700;
 }
 
-/* #price > div > div > div {
-    border: 1px solid white;
-} */
+
+#contact-form {
+    padding: 80px 0;
+    min-height: 700px;
+    text-align: center;
+}
+
+#contact-form h1 {
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+#contact-form h2 {
+    color: #3e3e3e;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 50px;
+    /* max-width: 30%; */
+}
+
+#contact-form .justify-content-center * {
+    text-align: left;
+}
+
+
+
+#contact-form label {
+    color: #3e3e3e;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+#contact-form input {
+    font-size: 16px;
+    border-radius: 0;
+    height: 49px;
+    border: 1px solid #c7c7c7;
+    background-color: #ffffff;
+}
+
+.contact {
+    padding: 0 20px;
+}
+
+.my-button {
+    border-radius: 0;
+    height: 63px;
+    background-color: #276c50;
+    color: white;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.my-button:hover, .my-button:focus, .my-button:active, .my-button.active, .open>.dropdown-toggle.my-button {
+    border: 1px solid #276c50;
+    background-color: white;
+    color: #276c50;
+  }

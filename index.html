@@ -16,10 +16,10 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top nav-down">
         <div class="container">
             <a class="navbar-brand">
-                <img src="img/logo.svg" alt="" width="270">
+                <img src="img/logo.svg" alt="">
             </a>
             <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
-                aria-expanded="false" aria-label="Toggle navigation">
+                aria-expanded="true" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div id="my-nav" class="collapse navbar-collapse">
@@ -135,7 +135,7 @@
                 </div>
                 <div class="col-lg-4 short-gymnastic">
                     <div id="offer-gymnastic" class="offer-inside">
-                        <h2>Gimanstyka zdrowotna</h2>
+                        <h2>Gimnastyka zdrowotna</h2>
                         <h3 class="h-bold">+50</h3>
                     </div>
                 </div>
@@ -205,6 +205,61 @@
             </div>
         </div>
     </section>
+
+    <section id="contact-form">
+        <div class="container">
+            <h1>formularz kontaktowy</h1>
+            <h2>Chcesz nawiązać współpracę?<br>Skorzystaj z poniższego formularza</h2>
+        </div>
+
+        <form method="get" action="#" class="contact">
+            <div class="row justify-content-center">
+                <div class="col-lg-3">
+                    <div class="form-group">
+                        <label for="name">Imię</label>
+                        <input id="name" class="form-control" type="text">
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input id="email" class="form-control" type="email">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mt-2">
+                <div class="col-lg-3">
+                    <div class="form-group">
+                        <label for="phone">Telefon</label>
+                        <input id="phone" class="form-control" type="text">
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="form-group">
+                        <label for="subject">Temat</label>
+                        <input id="subject" class="form-control" type="text">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-lg-6 mx-auto text-left">
+                    <label for="message">Wiadomość</label>
+                    <textarea id="message" class="form-control" rows="7"></textarea>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mt-2">
+                <div class="col-lg-2 offset-lg-4">
+                    <button class="btn btn-lg my-button btn-block text-center" type="submit">WYŚLIJ</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

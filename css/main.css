@@ -106,7 +106,7 @@ nav {
 }
 
 .offer-inside {
-    height: 330px;
+    min-height: 330px;
     padding-left: 40px;
     padding-top: 50px;
 }
@@ -130,7 +130,7 @@ nav {
 }
 
 .desc h2 {
-    max-width: 500px !important;
+    max-width: 80% !important;
 }
 
 #offer-desc-individual {
@@ -153,10 +153,18 @@ nav {
 
 .desc-inside p {
     margin-top: 20px;
-    max-width: 716px;
+    max-width: 70%;
     font-weight: 400;
     line-height: 30px;
     text-align: justify;
+}
+
+@media (max-width: 992px) {
+    .desc-inside p {
+        padding-bottom: 40px;
+        text-align: left !important;
+        max-width: 90% !important;
+    }
 }
 
 

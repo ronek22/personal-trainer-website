@@ -39,27 +39,27 @@ function hasScrolled() {
 
 
 $(document).ready(function() {
-    $('.short-individual').on('click', function() {
-        $('.short-individual, .short-motoric, .short-gymnastic').fadeOut(300).promise().done(function() {
-            $('.desc-individual').fadeIn(300);
+    $('.short-individual').on('click mouseenter', function() {
+        $('.short-individual, .short-motoric, .short-gymnastic').fadeOut().promise().done(function() {
+            $('.desc-individual').fadeIn();
         })
     })
 
-    $('.short-motoric').on('click', function() {
-        $('.short-individual, .short-motoric, .short-gymnastic').fadeOut(300).promise().done(function() {
-            $('.desc-motoric').fadeIn(300);
+    $('.short-motoric').on('click mouseenter', function() {
+        $('.short-individual, .short-motoric, .short-gymnastic').fadeOut().promise().done(function() {
+            $('.desc-motoric').fadeIn();
         })
     })
 
-    $('.short-gymnastic').on('click', function() {
-        $('.short-individual, .short-motoric, .short-gymnastic').fadeOut(300).promise().done(function() {
-            $('.desc-gymnastic').fadeIn(300);
+    $('.short-gymnastic').on('click mouseenter', function() {
+        $('.short-individual, .short-motoric, .short-gymnastic').fadeOut().promise().done(function() {
+            $('.desc-gymnastic').fadeIn();
         })
     })
 
-    $('.desc').on('click', function() {
+    $('.desc').on('click mouseleave', function() {
 
-        $('.desc').fadeOut(300).promise().done(function(){
+        $('.desc').fadeOut().promise().done(function(){
             $('.short-individual').fadeIn();
             $('.short-motoric').fadeIn();
             $('.short-gymnastic').fadeIn();

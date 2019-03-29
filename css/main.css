@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=K2D:500,700');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,500,700');
 
+.desc {
+    display: none;
+}
+
 body {
     font-family: "Open Sans";
     font-size: 18px;
     font-weight: 400;
-    padding-top: 200px;;
+    padding-top: 200px;
+    ;
 }
 
 strong {
@@ -14,9 +19,9 @@ strong {
     font-weight: 700;
 }
 
-.tab { 
-    display:inline-block; 
-    margin-left: 40px; 
+.tab {
+    display: inline-block;
+    margin-left: 40px;
 }
 
 nav {
@@ -36,7 +41,7 @@ nav {
     font-size: 20px;
     font-weight: 500;
     color: #707070;
-    padding-top:50px;
+    padding-top: 50px;
 }
 
 
@@ -110,6 +115,7 @@ nav {
     border-radius: 20px 0 0;
     border: 3px solid #6691ae;
     color: #6691ae;
+    background-color: white;
 }
 
 #offer-motoric {
@@ -121,6 +127,36 @@ nav {
     border-radius: 0 0 20px;
     border: 3px solid #6c275c;
     color: #6c275c;
+}
+
+.desc h2 {
+    max-width: 500px !important;
+}
+
+#offer-desc-individual {
+    border-radius: 20px 0 0;
+    color: white;
+    background-color: #6691ae;
+}
+
+#offer-desc-motoric {
+    border-radius: 20px 0 0;
+    color: white;
+    background-color: #b7a97e;
+}
+
+#offer-desc-gymnastic {
+    border-radius: 0 0 20px;
+    color: white;
+    background-color: #6c275c;
+}
+
+.desc-inside p {
+    margin-top: 20px;
+    max-width: 716px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: justify;
 }
 
 

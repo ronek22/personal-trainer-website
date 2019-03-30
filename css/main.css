@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=K2D:500,700');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,500,700');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Mina:400,700');
 
 .desc {
     display: none;
@@ -409,4 +410,8 @@ nav {
     border: 1px solid #276c50;
     background-color: white;
     color: #276c50;
+  }
+
+  .grecaptcha-badge {
+    display: none;
   }

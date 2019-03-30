@@ -26,13 +26,13 @@
                 <ul class="nav navbar-nav mr-auto"></ul> <!-- Add this one -->
                 <ul class="navbar-nav">
                     <li class="nav-item px-5">
-                        <a class="nav-link" href="#">Cennik</a>
+                        <a class="nav-link" href="#price">Cennik</a>
                     </li>
                     <li class="nav-item px-5">
-                        <a class="nav-link" href="#">O mnie</a>
+                        <a class="nav-link" href="#about-me">O mnie</a>
                     </li>
                     <li class="nav-item px-5">
-                        <a class="nav-link" href="#">Kontakt</a>
+                        <a class="nav-link" href="#contact-form">Kontakt</a>
                     </li>
                 </ul>
             </div>
@@ -212,18 +212,19 @@
             <h2>Chcesz nawiązać współpracę?<br>Skorzystaj z poniższego formularza</h2>
         </div>
 
-        <form method="get" action="#" class="contact">
+        <form id="invisible-recaptcha-form" accept-charset="UTF-8" action="https://usebasin.com/f/0e396d46fd27"
+            method="POST" class="contact">
             <div class="row justify-content-center">
                 <div class="col-lg-3">
                     <div class="form-group">
                         <label for="name">Imię<sup>*</sup></label>
-                        <input id="name" class="form-control" type="text" placeholder="Wpisz swoje imię">
+                        <input id="name" class="form-control" type="text" placeholder="Wpisz swoje imię" name="Imię" required>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <div class="form-group">
                         <label for="email">Email<sup>*</sup></label>
-                        <input id="email" class="form-control" type="email" placeholder="Podaj adres email">
+                        <input id="email" class="form-control" type="email" name="Email" placeholder="Podaj adres email" required>
                     </div>
                 </div>
             </div>
@@ -232,14 +233,14 @@
                 <div class="col-lg-3">
                     <div class="form-group">
                         <label for="phone">Telefon</label>
-                        <input id="phone" class="form-control" type="tel" placeholder="Podaj numer telefonu">
+                        <input id="phone" class="form-control" type="tel" placeholder="Podaj numer telefonu" name="Telefon">
                     </div>
                 </div>
 
                 <div class="col-lg-3">
                     <div class="form-group">
                         <label for="subject">Temat<sup>*</sup></label>
-                        <input id="subject" class="form-control" type="text" placeholder="Wybierz temat">
+                        <input id="subject" class="form-control" type="text" placeholder="Podaj temat" name="Temat" required>
                     </div>
                 </div>
             </div>
@@ -247,9 +248,11 @@
             <div class="row">
                 <div class="form-group col-lg-6 mx-auto text-left">
                     <label for="message">Wiadomość<sup>*</sup></label>
-                    <textarea id="message" class="form-control" rows="7" placeholder="Treść wiadomości"></textarea>
+                    <textarea id="message" class="form-control" rows="7" placeholder="Treść wiadomości" name="Wiadomość" required></textarea>
                 </div>
             </div>
+
+            <div class="g-recaptcha" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy" data-callback="onSubmit" data-badge="inline" data-size="invisible"></div>
 
             <div class="row justify-content-center mt-2">
                 <div class="col-lg-2 offset-lg-4">
@@ -259,6 +262,19 @@
         </form>
     </section>
 
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <script>
+        document.getElementById("invisible-recaptcha-form").addEventListener("submit", function(){
+            event.preventDefault();
+            grecaptcha.reset();
+            grecaptcha.execute();
+        }, false);
+        function onSubmit(token) {
+            document.getElementById("invisible-recaptcha-form").submit();
+        }
+    </script>
 
 
     <!-- Optional JavaScript -->

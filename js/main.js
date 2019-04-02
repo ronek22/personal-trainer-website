@@ -50,7 +50,11 @@ $(document).ready(function () {
         elementsHasFadeOut = false;
         $('.short-individual, .short-motoric, .short-gymnastic').fadeOut(200).promise().done(function () {
             elementsHasFadeOut = true;
-            $('.desc-individual').fadeIn();
+            $('.desc-individual').fadeIn(function() {
+                if($(window).width() <= 991){
+                    $("html,body").animate({ scrollTop: $(".desc-individual").offset().top - 100}, 300);
+                }
+            });
         })
     })
 
@@ -62,7 +66,11 @@ $(document).ready(function () {
         elementsHasFadeOut = false;
         $('.short-individual, .short-motoric, .short-gymnastic').fadeOut(200).promise().done(function () {
             elementsHasFadeOut = true;
-            $('.desc-motoric').fadeIn();
+            $('.desc-motoric').fadeIn(function() {
+                if($(window).width() <= 991){
+                    $("html,body").animate({ scrollTop: $(".desc-motoric").offset().top - 100}, 300);
+                }
+            });
         })
     })
 
@@ -74,7 +82,11 @@ $(document).ready(function () {
         elementsHasFadeOut = false;
         $('.short-individual, .short-motoric, .short-gymnastic').fadeOut(200).promise().done(function () {
             elementsHasFadeOut = true;
-            $('.desc-gymnastic').fadeIn();
+            $('.desc-gymnastic').fadeIn(function() {
+                if($(window).width() <= 991){
+                    $("html,body").animate({ scrollTop: $(".desc-gymnastic").offset().top - 100}, 300);
+                }
+            });
         })
     })
 

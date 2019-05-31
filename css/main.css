@@ -217,7 +217,7 @@ nav {
     margin-bottom: 20px;
 }
 
-#about-me h2 {
+#about-me .name {
     font-family: Montserrat;
     font-size: 30px;
     font-weight: 300;

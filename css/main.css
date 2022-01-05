@@ -72,6 +72,10 @@ nav {
     padding-top: 50px;
 }
 
+/* .row {
+    display: flex;
+    align-items:flex-end;
+  } */
 
 
 .row.row-grid [class*="col-"]+[class*="col-"] {
@@ -126,11 +130,19 @@ nav {
     text-transform: uppercase;
 }
 
+
+
 .h-bold {
     margin-right: 30px;
     font-weight: 700 !important;
     text-align: right;
-    font-size: 50px !important;
+    font-size: 25px !important;
+}
+
+.smaller {
+    margin-top:110px !important;
+    font-size: 20px !important;
+    padding-right: 15px;
 }
 
 .offer-inside {
@@ -262,7 +274,16 @@ nav {
     font-size: 30px;
     font-weight: 500;
     text-transform: uppercase;
-    margin-bottom: 30px;
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 992px) {
+    #price h2 {
+        height: auto;
+        margin-bottom: 10px;
+    }
 }
 
 #price-individual {
